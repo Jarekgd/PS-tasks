@@ -27,3 +27,13 @@ elif direct == "left":
     print("I am moving in a left direction!")
 else:
     print("I am moving in a right direction!")
+
+#########################################
+# Activity 4: Modulo Operator
+
+print("Please enter a whole number.")
+num = int(input())
+if num % 2:
+    print(f"The number {num} is an odd number.")
+else:
+    print(f"The number {num} is an even number.")

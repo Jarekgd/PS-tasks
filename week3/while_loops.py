@@ -45,3 +45,11 @@ while i <= len(phrase):
 #####################################
 # Activity 5: Sum 100
 
+print("Calculating the sum of the first 100 numbers...")
+i = 1
+sum = 0
+while i <= 100:
+    sum = sum + i
+    i += 1
+
+print(f"...Done! The answer is {sum}.")

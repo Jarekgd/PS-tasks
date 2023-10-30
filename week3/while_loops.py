@@ -57,3 +57,13 @@ print(f"...Done! The answer is {sum}.")
 ###################################
 # Activity 6: Sum User Numbers
 
+print("How many numbers should I sum up?")
+n = int(input())
+i = 1
+sum = 0
+while i <= n:
+    print(f"Please enter number {i} of {n}")
+    num = int(input())
+    sum = sum + num
+    i += 1
+print(f"The answer is {sum}.")

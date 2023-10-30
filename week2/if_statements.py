@@ -14,3 +14,7 @@ if activity == "calculate":
 else:
     print("Performing activity...")
 print("Activity completed!")
+
+###########################################
+# Activity 3: IF...ELIF...ELSE statement
+

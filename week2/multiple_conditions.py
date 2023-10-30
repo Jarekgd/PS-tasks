@@ -31,11 +31,11 @@ if doYou == "y":
     print("How many pets do you have?")
     howMany = int(input())
     if howMany > 1:
-        print(f"You have {howmany} pets! Wow!")
+        print(f"You have {howMany} pets! Wow!")
         print("What pets do you have? (dogs/ cats/ fish")
         whatKind = input()
         if (whatKind == "dogs") or ( whatKind == "cats"):
-            print(f"I love {}! They are good friends")
+            print(f"I love {whatKind}! They are good friends!")
         elif whatKind == "fish":
             print(f"I love fish. They don't bark!")
     elif howMany == 1:
@@ -43,10 +43,12 @@ if doYou == "y":
         print("What do you have?(dog/cat/fish")
         whatKind = input()
         if (whatKind == "dog") or ( whatKind == "cat"):
-            print(f"I love {}! They are good friends")
+            print(f"I love {whatKind}s! They are good friends!")
         elif whatKind == "fish":
             print("you have only one fish? What a shame!")
     else:
-        print("C'mon! You should get a pet!")
+        print("Oopps, I don't understand.")
+elif doYou == "n":
+    print("C'mon! You must have a pet! You live will be better!")
 else:
-    print("You must have a pet! You live will be better!")
+    print("I don't know what you mean.")

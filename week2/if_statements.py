@@ -41,7 +41,7 @@ else:
 # there is no need to write if num % 2 == 1 , 1 means the value of boolean it true, 0 is false.
 
 #########################################
-Activity 5: Comparison Operators
+# Activity 5: Comparison Operators
 
 print("Please enter the first number.")
 num1 = int(input())

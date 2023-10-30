@@ -29,3 +29,16 @@ while i <= bars:
     print("Charging:", end="")
     print(" \u2588" * i)
     i += 1
+
+######################################
+# Activity 4: Repeating Word
+
+print("Please enter a phrase:")
+phrase = len(input())
+i = 1
+while i <= phrase:
+    print("Hi ", end ="")
+    i += 1
+
+# print("Hi " * phrase)
+

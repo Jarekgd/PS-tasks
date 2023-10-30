@@ -1,5 +1,5 @@
-# Activity 1
-# Ask user to enter their name
+########################################
+# Activity 1: Ask user to enter their name
 
 print("What is your name?")
 name = input()
@@ -8,7 +8,9 @@ print(f"It is nice to meet you {name}")
 # name = input("What is your name?")
 # print(f"It is nice to meet you {name}")
 
+######################################
 # Activity 2: ASCII Robot
+
 print("\nPlease enter a character for the eye")
 eye = input()
 print("")
@@ -22,7 +24,9 @@ print("#  =====  #")
 print("###########")
 print("   #  #")
 
+#####################################
 # Activity 3: Data Types
+
 print("\nWhat is your name?")
 name = input()
 print("How old are you?(in years)")
@@ -48,8 +52,20 @@ print(f"{name} you are {age} years old and your BMI is {bmi:.2f}")
 # other way of formatting floats:
 # round(a, 2)
 # or
-# bmi_formated = "{:.2f}".format(bmi)
+# bmi_formatted = "{:.2f}".format(bmi)
 # or
-# bmi_formated = format(bmi, ".2f")
+# bmi_formatted = format(bmi, ".2f")
 
+######################################
+# Activity 4: String Operator
 
+print("\nPlease enter the number of lives.")
+lives = int(input())
+print("\nPlease enter the energy level.")
+energy = int(input())
+print("\nPlease enter the shield level.")
+level = int(input())
+print("\nHealth has been set.\n")
+print("\u2665" * lives)
+print("\u2666" * energy)
+print("\u2666" * level)

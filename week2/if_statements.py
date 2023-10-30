@@ -18,3 +18,12 @@ print("Activity completed!")
 ###########################################
 # Activity 3: IF...ELIF...ELSE statement
 
+direct = input("Towards which direction should I go (up, down, left or right)?\n")
+if direct == up:
+    print(f"I am moving in an upwards direction!")
+elif direct == down:
+    print("I am moving in a downwards direction!")
+elif direct == left:
+    print("I am moving in a left direction!")
+else:
+    print("I am moving in a right direction!")

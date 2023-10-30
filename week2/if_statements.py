@@ -53,3 +53,32 @@ elif num1 < num2:
     print("The first number is the smallest.")
 else:
     print("Both are equal!")
+
+#########################################
+# Activity 6: Counter
+
+i = 0
+j = 0
+print("Please enter the first whole number.")
+num1 = int(input())
+print("Please enter the second whole number.")
+num2 = int(input())
+print("Please enter the third whole number.")
+num3 = int(input())
+
+if num1 % 2:
+    i += 1
+else:
+    j += 1
+
+if num2 % 2:
+    i += 1
+else:
+    j += 1
+
+if num3 % 2:
+    i += 1
+else:
+    j += 1
+
+print(f"There were {j} even and {i} odd numbers.")

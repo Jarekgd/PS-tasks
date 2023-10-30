@@ -22,7 +22,7 @@ print("\' Displays a single quote")
 print("")
 
 # Task 1
-print("\"I am programming!\"")
+print("\t\t\"I am programming!\"")
 
 # Activity 4
 # Display a box

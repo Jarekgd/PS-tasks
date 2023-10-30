@@ -34,11 +34,14 @@ while i <= bars:
 # Activity 4: Repeating Word
 
 print("Please enter a phrase:")
-phrase = len(input())
+phrase = input()
 i = 1
-while i <= phrase:
+while i <= len(phrase):
     print("Hi ", end ="")
     i += 1
 
 # print("Hi " * phrase)
+
+#####################################
+# Activity 5: Sum 100
 

@@ -57,8 +57,8 @@ else:
 #########################################
 # Activity 6: Counter
 
-i = 0
-j = 0
+i = 0               # odd numbers counter starts from 0
+j = 0               # even numbers counter starts from 0
 print("Please enter the first whole number.")
 num1 = int(input())
 print("Please enter the second whole number.")
@@ -66,12 +66,12 @@ num2 = int(input())
 print("Please enter the third whole number.")
 num3 = int(input())
 
-if num1 % 2:
-    i += 1
+if num1 % 2:        # modulo num % 2 equals 0 for even numbers, it means it is boolean false, odd equals 1, it is boolean true
+    i += 1          # if modulo equals 1, 1 is added to odd numbers counter...
 else:
-    j += 1
+    j += 1            # ... otherwise 1 is added to even numbers counter
 
-if num2 % 2:
+if num2 % 2:        # if statement must be repeated for every inserted number
     i += 1
 else:
     j += 1

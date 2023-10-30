@@ -42,3 +42,4 @@ elif room == "in the living room":
         print("Found some stuff but no phone.")
 else:
     print("I do not know where that is but I will keep looking.")
+

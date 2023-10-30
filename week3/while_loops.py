@@ -53,3 +53,7 @@ while i <= 100:
     i += 1
 
 print(f"...Done! The answer is {sum}.")
+
+###################################
+# Activity 6: Sum User Numbers
+

@@ -17,3 +17,15 @@ while count <= obstacles:
     print(f"{count} obstacles avoided.")
     count += 1
 print("\nAll obstacles have been avoided.")
+
+######################################
+# Added code to demonstrate the use of a while loop with ASCII art.
+
+i = 1
+print("How many bars should be charged?")
+bars = int(input())
+print("")
+while i <= bars:
+    print("Charging:", end="")
+    print(" \u2588" * i)
+    i += 1

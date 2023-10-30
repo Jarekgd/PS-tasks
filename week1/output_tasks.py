@@ -21,9 +21,35 @@ print("\" Displays a double quote")
 print("\' Displays a single quote")
 print("")
 
-# Activity 4
-# Display a box
-
-
 # Task 1
 print("\"I am programming!\"")
+
+# Activity 4
+# Display a box
+print("")
+print("  \\     /")
+print("   \\   /")
+print("###########")
+print("#         #")
+print("#  0   0  #")
+print("#         #")
+print("#  =====  #")
+print("###########")
+print("   #  #")
+print("###########")
+print("#         #")
+print("#         #")
+print("#         #")
+print("#         #")
+print("#         #")
+print("#         #")
+print("#         #")
+print("###########")
+print("# #     # #")
+print("# #     # #")
+print("# #     # #")
+print("# #     # #")
+print("# #     # #")
+print("# #     # #")
+print("# #     # #")
+

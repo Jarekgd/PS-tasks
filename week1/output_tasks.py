@@ -53,3 +53,18 @@ print("# #     # #")
 print("# #     # #")
 print("# #     # #")
 
+# additional research:
+
+# print("Hello, world!", end="") - printing without new line
+# print("x", "y", "z", sep="-") - separator
+
+#import sys
+# sys.stdout.write("Hello, ") - print without new line
+# sys.stdout.flush()           - string is printed immediately
+# sys.stdout.write("World!")
+# sys.stdout.flush()
+
+# pip install rich
+# from rich.console import Console
+# console = Console()
+# console.print("Printing without a newline", end="")

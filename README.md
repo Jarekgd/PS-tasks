@@ -1,3 +1,3 @@
-# ProblemSolving-Pythom
+# ProblemSolving-Python
 
 #gh auth login

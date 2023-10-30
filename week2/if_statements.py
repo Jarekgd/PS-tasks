@@ -37,3 +37,5 @@ if num % 2:
     print(f"The number {num} is an odd number.")
 else:
     print(f"The number {num} is an even number.")
+
+# there is no need to write if num % 2 == 1 , 1 means the value of boolean it true, 0 is false.

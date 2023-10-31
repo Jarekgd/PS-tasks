@@ -11,3 +11,11 @@ for count in range(0,count,1):
 
 print("\nDone!")
 
+#################################
+# Activity 2: Count Down
+
+distance = int(input("How far are we from the target?\n"))
+for i in range(distance, 0 , -1):
+    print(f"{i} steps remaining")
+
+print("\nTarget achieved!")

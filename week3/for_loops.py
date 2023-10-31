@@ -57,3 +57,12 @@ for i in range(len(phrase) -1, 0, -1):
     reverse = reverse + phrase[i-1]
 
 print(f"\nThe phrase is: {reverse}")
+
+##################################
+# Activity 6: Membership Operators
+
+print("What phrase do you see?")
+phrase = input()
+print("\noutputting...")
+for i in phrase:
+    print(i)

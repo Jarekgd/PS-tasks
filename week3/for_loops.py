@@ -63,6 +63,6 @@ print(f"\nThe phrase is: {reverse}")
 
 print("What phrase do you see?")
 phrase = input()
-print("\noutputting...")
+print("\noutputting...\n")
 for i in phrase:
     print(i)

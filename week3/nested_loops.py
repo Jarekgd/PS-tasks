@@ -9,3 +9,12 @@ for i in range(0, rows, 1):
     for j in range(0, cols, 1):
         print(":-) ", end="")
     print("")
+
+##################################
+# Activity 2: Nesting
+
+print("Please enter a sequence")
+seq = input()
+print("Please enter the character for the marker")
+mark = input()
+for i in range()

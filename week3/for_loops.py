@@ -19,3 +19,14 @@ for i in range(distance, 0 , -1):
     print(f"{i} steps remaining")
 
 print("\nTarget achieved!")
+
+###################################
+# Activity 3: Range
+
+level = int(input("What level of brightness is required?\n"))
+print("Adjusting brightness...\n")
+
+for i in range(0, level + 1, 2):
+    print("*" * i)
+
+print("Complete!")

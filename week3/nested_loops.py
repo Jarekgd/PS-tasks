@@ -17,4 +17,18 @@ print("Please enter a sequence")
 seq = input()
 print("Please enter the character for the marker")
 mark = input()
-for i in range()
+for i in range(0, len(seq), 1):
+    if seq[i] == mark:
+        break
+a=i
+for i in range(0, len(seq), 1):
+    if seq[i] == mark:
+        continue
+b=i-1
+print(f"The distance between the markers is {b-a}.")
+
+
+
+
+
+

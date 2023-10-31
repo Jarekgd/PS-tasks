@@ -19,13 +19,13 @@ print("Please enter the character for the marker")
 mark = input()
 for i in range(0, len(seq), 1):
     if seq[i] == mark:
-        break
-a=i
-for i in range(0, len(seq), 1):
+        break               # loop stops at the first x
+a=i                         # saved number of the first x position
+for i in range(a+1, len(seq), 1):
     if seq[i] == mark:
-        continue
+        break
 b=i-1
-print(f"The distance between the markers is {b-a}.")
+print(f"\nThe distance between the markers is {b-a}.")
 
 
 

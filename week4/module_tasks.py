@@ -20,3 +20,8 @@ for i in range(min, max):
     else:
         print("Congratulations! You guessed my number!")
         break
+
+
+
+
+

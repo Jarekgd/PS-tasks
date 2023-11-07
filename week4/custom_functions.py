@@ -38,3 +38,17 @@ def escape_by(plan):
 escape_by("jumping over")
 escape_by("running around")
 escape_by("cross bridge ahead")
+
+############################################
+# Activity 4: Loop
+
+def cross_bridge(steps):
+    for i in range(steps):
+        print("Crossed step.")
+    if i >= 5:
+        print("The bridge is collapsing!")
+    else:
+        print("we must keep going!")
+
+cross_bridge(3)
+cross_bridge(6)

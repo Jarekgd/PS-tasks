@@ -66,9 +66,9 @@ def repeat(word):
     repeat = int(input())
     for i in range(repeat):
         if i % 2:
-            print(lowercase(word))
+            print(word.lower())
         else:
-            print(uppercase(word))
+            print(word.upper())
 def run():
     print("Enter a word:")
     word = input()

@@ -29,10 +29,13 @@ def run():
     invent_w = float(input())
     print("What would you like to calculate (sum or average)?")
     answer = input()
-    calc_avg_weight(char_w, invent_w)
+
+    suma = sum_weights(char_w, invent_w)
+    aver = calc_avg_weight(char_w, invent_w)
+    
     if answer == "sum":
-        print(f"The sum of weights is {sum_weights(char_w, invent_w)}.")
+        print(f"The sum of weights is {suma}.")
     if answer == "average":
-        print(f"The average of weights is {calc_avg_weight(char_w, invent_w)}")
+        print(f"The average of weights is {aver}")
 
 run()

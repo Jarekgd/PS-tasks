@@ -11,7 +11,7 @@ def create_ladder():
     steps = int(input())
     display_ladder(steps)
 
-create_ladder()
+# create_ladder()
 
 #############################################
 # Activity 2: Return Values
@@ -38,7 +38,7 @@ def run():
     if answer == "average":
         print(f"The average of weights is {aver}")
 
-run()
+# run()
 
 #################################################
 # Activity 3: Word Manipulation
@@ -69,7 +69,7 @@ def repeat(word):
             print(word.lower())
         else:
             print(word.upper())
-def run():
+def menu():
     print("Enter a word:")
     word = input()
     print("Choose the option:")
@@ -91,6 +91,6 @@ def run():
         repeat(word)
     else:
         print("Wrong input")
-run()
+# menu()
 
 

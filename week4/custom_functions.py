@@ -1,15 +1,16 @@
 # Activity 1: Simple User Defined Function
+
 def listen():
     print("What sound did you hear?")
     sound = input()
     print(f"That was a loud {sound}!\n")
 
-listen()
+
 
 #########################################
 # Activity 2: Nesting
 
-def identify ():
+def identify():
     print("What lies before us?")
     answer = input()
     if answer == "a large boulder":
@@ -17,7 +18,7 @@ def identify ():
     else:
         print("We will be fine.")
 
-identify()
+
 print("")
 ########################################
 # Activity 3: Parameters
@@ -35,9 +36,7 @@ def escape_by(plan):
     else:
         print("We cannot escape that way! The boulder is in the way!" )
 
-escape_by("jumping over")
-escape_by("running around")
-escape_by("cross bridge ahead")
+
 
 ############################################
 # Activity 4: Loop
@@ -50,8 +49,7 @@ def cross_bridge(steps):
     else:
         print("we must keep going!")
 
-cross_bridge(3)
-cross_bridge(6)
+
 print("")
 ##############################################
 # Activity 5: Multiple Parameters
@@ -62,5 +60,7 @@ def climb_ladder(remaining, crossed):
     else:
         print("We are almost there!")
 
-climb_ladder(5, 2)
-climb_ladder(2, 5)
+
+
+if __name__=="__main__":
+    run()

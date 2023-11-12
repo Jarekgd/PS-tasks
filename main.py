@@ -4,7 +4,10 @@ import week2.if_statements as wk2_if
 import week2.multiple_conditions as wk2_multiple
 import week2.nested_if as wk2_nested
 import week3.while_loops as wk3_while
-
+import week4.built_in_functions as wk4_built
+import week4.custom_functions as wk4_custom
+import week4.module_tasks as wk4_modules
+import week4.multiple_functions as wk4_functions
 
 def run_week_one():
     print("Which program in 'Week 1' do you wish to run?")
@@ -18,7 +21,7 @@ def run_week_one():
         wk1_output.escape_characters()
     elif response == "display_box":
         wk1_output.display_box()
-    elif reponse == "enter_name":
+    elif response == "enter_name":
         wk1_input.enter_name()
     elif response == "ascii_robot":
         wk1_input.ascii_robot()
@@ -71,13 +74,44 @@ def run_week_three():
     if response == "sum_user_numbers":
         wk3_while.sum_user_numbers()
 
-def run():
+def run_week_four():
+    print("Which program in 'Week 4' do you wish to run?")
+    print("(ascii_value, ascii_char, listen, identify, escape_by, cross_bridge, climb_ladder, guess, create_ladder, run, menu)")
+    response = input()
+    if response == "ascii_value":
+        wk4_built.ascii_value()
+    elif response == "ascii_char":
+        wk4_built.ascii_char()
+    elif response == "listen":
+        wk4_custom.listen()
+    elif response == "identify":
+        wk4_custom.identify()
+    elif response == "escape_by":
+        wk4_custom.escape_by("jumping over")
+        wk4_custom.escape_by("running around")
+        wk4_custom.escape_by("cross bridge ahead")
+    elif response == "cross_bridge":
+        wk4_custom.cross_bridge(3)
+        wk4_custom.cross_bridge(6)
+    elif response == "climb_ladder":
+        wk4_custom.climb_ladder(5, 2)
+        wk4_custom.climb_ladder(2, 5)
+    elif response == "guess":
+        wk4_modules.guess()
+    elif response == "create_ladder":
+        wk4_functions.create_ladder()
+    elif response == "run":
+        wk4_functions.run()
+    elif response == "menu":
+        wk4_functions.menu()
 
+def run():
     while(True):
         print("\nWhat would you like to do?")
         print("[a] Run 'week 1' programs")
         print("[b] Run 'week 2' programs")
         print("[c] Run 'week 3' programs")
+        print("[d] Run 'week 4' programs")
         print("[q] Quit")
         response = input()
         if response == "a":
@@ -86,6 +120,8 @@ def run():
             run_week_two()
         elif response =="c":
             run_week_three()
+        elif response == "d":
+            run_week_four()
         elif response == "q":
             break
         else:

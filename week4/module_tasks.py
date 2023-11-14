@@ -1,5 +1,4 @@
 # Activity 1: Importing Modules
-
 import random
 
 def guess():
@@ -21,9 +20,3 @@ def guess():
         else:
             print("Congratulations! You guessed my number!")
             break
-
-
-
-
-
-

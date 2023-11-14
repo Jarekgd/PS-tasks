@@ -3,8 +3,6 @@
 def simple_message():
     print("Welcome to QHO426!")
 
-
-
 # Activity 2
 # Outputting a Multi-line Message
 def multiline_message():

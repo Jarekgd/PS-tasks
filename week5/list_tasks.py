@@ -20,9 +20,6 @@ def run_task2():
     print("Moving...")
     path = movements()
 
-##################################
-# Activity 4: Populate
-
     for i in range(0,len(path),2):
         direction = path[i]
         steps = path[i + 1]

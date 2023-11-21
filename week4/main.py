@@ -11,9 +11,11 @@ import week4.custom_functions as wk4_custom
 import week4.module_tasks as wk4_modules
 import week4.multiple_functions as wk4_functions
 
+
 def run_week_one():
     print("Which program in 'Week 1' do you wish to run?")
     print("(simple_message, multiline_message, escape_characters, display_box, enter_name, ascii_robot, data_types, string_operator)")
+    print()
     response = input("")
     if response == "simple_message":
         wk1_output.simple_message()
@@ -35,6 +37,7 @@ def run_week_one():
 def run_week_two():
     print("Which program in 'Week 2' do you wish to run?")
     print("(if_statement, if_else, if_elif_else, modulo_operator, comparsion_operators, counter, or_operator, and_operator, review, nested_decision)")
+    print()
     response = input()
     if response == "if_statement":
         wk2_if.if_statement()
@@ -108,7 +111,7 @@ def run_week_four():
         wk4_functions.menu()
 
 def run():
-    while(True):
+    while (True):
         print("\nWhat would you like to do?")
         print("[a] Run 'week 1' programs")
         print("[b] Run 'week 2' programs")

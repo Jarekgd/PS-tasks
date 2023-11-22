@@ -1,3 +1,4 @@
+# Activity 1: Current Working Directory
 import os           # built-in module for interacting with the operating system, it is part of standard module, stdlib
 
 def cwd():
@@ -12,5 +13,8 @@ def run():
     cwd()
 
 run()
+
+##########################################
+# Activity 2: Reading a File
 
 

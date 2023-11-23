@@ -16,5 +16,26 @@ run()
 
 ##########################################
 # Activity 2: Reading a File
+print("")
+def display_chars(file, chars):
+    with open(file) as f:           # open and close file when done
+        print(f"The first {chars} characters are:")
+        print(f.read(chars))
 
+def display_line(path):
+    with open(path) as f:
+        print("\nThe first line is:")
+        print(f.readline())
 
+def display_text(path):
+    f=open(path)                # open file, default = for reading, default = text format
+    print("\nThe full text is:")
+    print(f.read())
+    f.close()                   # close file
+
+def run_task2():
+    display_chars("library.txt", 5)
+    display_line("library.txt")
+    display_text("library.txt")
+
+run_task2()

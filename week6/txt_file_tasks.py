@@ -17,25 +17,45 @@ run()
 ##########################################
 # Activity 2: Reading a File
 print("")
-def display_chars(file, chars):
-    with open(file) as f:           # open and close file when done
+def display_chars(path, chars):
+    with open(path + "/library.txt") as f:           # open and close file when done, absolute path to the file
         print(f"The first {chars} characters are:")
         print(f.read(chars))
 
 def display_line(path):
-    with open(path) as f:
+    with open(path + "/library.txt") as f:
         print("\nThe first line is:")
         print(f.readline())
 
 def display_text(path):
-    f=open(path)                # open file, default = for reading, default = text format
+    f=open(path+"/library.txt")                # open file, default = for reading, default = text format
     print("\nThe full text is:")
     print(f.read())
     f.close()                   # close file
 
 def run_task2():
-    display_chars("library.txt", 5)
-    display_line("library.txt")
-    display_text("library.txt")
+    display_chars(os.getcwd(), 5)
+    display_line(os.getcwd())
+    display_text(os.getcwd())
 
-run_task2()
+if __name__ == "__main__":
+    run_task2()
+
+###########################################
+# Activity 3: Reading a File
+print("")
+
+def search(file):
+    print("Searching...")
+    with open(file) as f:
+        for line in f:
+            location=line.strip()       # separating lines
+            print(f"Looked in {location}")
+    print("...Done!")
+    f.close()
+
+def run_task3():
+    search("library.txt")
+
+if __name__ == "__main__":
+    run_task3()

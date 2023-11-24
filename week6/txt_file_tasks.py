@@ -57,5 +57,34 @@ def search(file):
 def run_task3():
     search("library.txt")
 
-if __name__ == "__main__":
-    run_task3()
+run_task3()
+
+########################################
+# Activity 4: Writing to a File
+print("")
+
+def search_books():
+    file=("books.txt")
+    print("Searching... ",end="")
+    sections = ""   # declaring empty string variable
+    books = "Books:\n"
+    with open(file) as f:
+        for line in f:
+            if line.startswith("Section"):
+                sections+=line
+            else:
+                books+=line
+        print("Done!")
+        return (f"{sections}\n{books}")
+
+def save(path, data):
+    print("Saving... ", end="")
+    with open(path, "w") as f:
+        f.write(data)
+        print("Done!")
+
+def run_task4():
+    data=search_books()
+    save("section-books.txt", data)
+
+run_task4()

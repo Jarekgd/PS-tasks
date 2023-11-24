@@ -35,3 +35,24 @@ def run_task2():
 if __name__=="__main__":
     run_task2()
 
+########################################
+# Activity 3: Export CSV
+
+def export(path, inp):
+    print("Exporting... ")
+    with open(path,"a") as file:
+        for count in range(inp):
+            print("Please enter the item id:")
+            item_id=input()
+            print("Please enter the item name:")
+            item_name = input()
+            print("Please enter the item colour:")
+            item_colour = input()
+            file.write(f"\n{item_id},{item_name},{item_colour}")
+        print("Done!")
+
+def run():
+    export("exported_items.csv", 2)
+
+if __name__=="__main__":
+    run()

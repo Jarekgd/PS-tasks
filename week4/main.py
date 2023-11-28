@@ -15,7 +15,7 @@ import week4.multiple_functions as wk4_functions
 def run_week_one():
     print("Which program in 'Week 1' do you wish to run?")
     print("(simple_message, multiline_message, escape_characters, display_box, enter_name, ascii_robot, data_types, string_operator)")
-    print()
+    print("")
     response = input("")
     if response == "simple_message":
         wk1_output.simple_message()
@@ -31,7 +31,7 @@ def run_week_one():
         wk1_input.ascii_robot()
     elif response == "data_types":
         wk1_input.data_types()
-    elif response == "string_operator()":
+    elif response == "string_operator":
         wk1_input.string_operator()
 
 def run_week_two():

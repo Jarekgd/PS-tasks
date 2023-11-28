@@ -69,8 +69,8 @@ def string_operator():
     energy = int(input())
     print("\nPlease enter the shield level.")
     level = int(input())
-    print("\nHealth has been set.\n")
+    print(u"\nHealth has been set.\n")
     print("\u2665" * lives)
-    print("\u2666" * energy)
-    print("\u2666" * level)
+    print("\u2666" * energy)            # hex number
+    print(chr(9830) * level)            # decimal number
 

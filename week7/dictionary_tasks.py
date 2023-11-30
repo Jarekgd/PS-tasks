@@ -42,3 +42,37 @@ def run():
 
 
 run()
+
+##################################
+# Activity 3: Dictionary of Dictionaries
+print()
+
+def short_pattern():
+    pattern = {}
+    pattern["sequence"] = "101"
+    pattern["occurrences"] = 5
+    return(pattern)
+
+def medium_pattern():
+    pattern = {}
+    pattern["sequence"] = "111000"
+    pattern["occurrences"] = 25
+    return pattern
+
+def long_pattern():
+    pattern = {}
+    pattern["sequence"] = "1100110011001100"
+    pattern["occurrences"] = 50
+    return pattern
+
+def run_task3():
+    print("Analysing patterns...")
+    s = short_pattern()
+    m = medium_pattern()
+    l = long_pattern()
+    print(s)
+    print(m)
+    print(l)
+
+run_task3()
+

@@ -1,4 +1,5 @@
 # Activity 1: Simple Line Plot
+import random
 import matplotlib.pyplot as plt
 
 def display_line(x, y):
@@ -73,4 +74,34 @@ def run_task3():
     plt.plot(values[0], values[1], 'ro--')
     plt.show()
 
-run_task3()
+# run_task3()
+
+#####################################
+# Activity 4: Data Dictionary and Plots
+
+def data():
+    paths = {}
+    line = input("What type of line? ':', '--', or '-'")
+    colour = input("What colour? 'r', 'g', or 'b'")
+    marker= input("What marker type? 'o', 's', or '^'")
+    paths["line"]=line
+    paths["colour"]=colour
+    paths["marker"]=marker
+    return paths
+
+def generate():
+    number = int(input("How many lines would you like to display?"))
+    values = data()
+    x_values = []
+    y_values = []
+    for i in range(number):
+        x_values.append(random.sample(range(1,20), 1))
+        y_values.append( random.sample(range(1,20), 1))
+    plt.plot(x_values, y_values, f"{values["colour"]}{values["marker"]}{values["line"]}")
+    plt.show()
+def run_task4():
+    print("Running....")
+    generate()
+    print("Done!")
+
+run_task4()
